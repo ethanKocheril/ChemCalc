@@ -12,8 +12,8 @@ public class PeriodicTable{
   public void remove(Element e){
     this.periodicTable.remove(e);
   }
-  public Element getElement(Element e){
-      return e;
+  public void getElement(int index){
+      System.out.println(this.periodicTable.get(index));
   }
   public void printTable(){
     for(Element e: this.periodicTable){
