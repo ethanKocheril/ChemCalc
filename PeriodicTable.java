@@ -13,11 +13,13 @@ public class PeriodicTable{
     this.periodicTable.remove(e);
   }
   public void getElement(int index){
-      System.out.println(this.periodicTable.get(index));
+      System.out.println(this.periodicTable.get(index - 1));
   }
   public void printTable(){
+    int index = 1;
     for(Element e: this.periodicTable){
-      System.out.println(e);
+      System.out.println(index + ". " + e);
+      index++;
     }
   }
 }
