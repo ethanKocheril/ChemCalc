@@ -20,6 +20,8 @@ class Main {
       myPeriodicTable.add(new Element(num, mass, name));
     }
     myPeriodicTable.printTable();
+    System.out.println("What would you like to do?");
+    String action = input.nextLine();
   }    
 
 }
