@@ -21,7 +21,20 @@ class Main {
     }
     myPeriodicTable.printTable();
     System.out.println("What would you like to do?");
-    String action = input.nextLine();
+    String action = input.next();
+    if(action.equals("conversions")){
+      while(input.hasNextLine()){
+        System.out.println("What is the first unit you'd like to convert?");
+        String unit1 = input.next();
+        if(unit1.equals("done")) break;
+        System.out.println("Enter the second unit.");
+        String unit2 = input.next();
+        double result = myPeriodicTable.conversion(unit1, unit2);
+        System.out.println("Your result is " + result + " " + unit2);
+      }
+      }
+            
+    }
   }    
 
-}
+

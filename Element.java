@@ -1,4 +1,3 @@
-
 public class Element{
   private int atomicNumber;
   private double molarMass;
@@ -9,6 +8,14 @@ public class Element{
     this.molarMass = atomicMass;    
     this.name = substance;
   }
+  
+  public String getName(){
+    return this.name;
+  }
+  public double getAmu(){
+    return this.molarMass;
+  }
+
 
   public double gramsToMoles(double grams){
     return (grams / this.molarMass);
