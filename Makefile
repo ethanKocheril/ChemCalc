@@ -1,5 +1,10 @@
-default:
+default: build
+
+build:
 	javac src/*.java
-	cd src && java Main && cd ..
+
 clean:
 	rm src/*.class
+
+run: build
+	java -cp src Main

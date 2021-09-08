@@ -6,4 +6,5 @@ Dependencies
 - java(built with openjdk11 but older versions could work)
 - some version of make(it works with GNU and BSD make)
 
-Just cd into the ChemCalc folder and run make to build and run the project
+Just cd into the ChemCalc folder and run 'make run' to build and run the project
+
